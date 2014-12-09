@@ -1,3 +1,5 @@
+/* COMMAND LINE EXPERIMENTS WIHT REPL */
+
 qs = require("querystring");
 
 /*
@@ -77,6 +79,22 @@ console.log(global)
 
 var ssRe = /^\d{3}-\d{2}-\d{4}$/;
 ssRe.test('555-555-5555');
+
+/*
+.clear
+.exit
+.help
+.load
+.save
+*/
+
+var repl = require("repl");
+repl.start([prompt],[stream], [eval], [useGlobal], [ignoreUndefined])
+
+
+var repl = require("repl");
+repl.start("node via stdin",null, null, null, true);
+
 
 
 
