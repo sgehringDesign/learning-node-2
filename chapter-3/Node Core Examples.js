@@ -14,3 +14,15 @@ var test = "this really isn't global, as we know global";
 */
     
     
+    
+    
+var globalValue;
+
+exports.setGlobal = function(val) {
+    globalValue = val;
+}
+
+exports.returnGlobal = function(val) {
+    console.log(globalValue)
+    return globalValue;
+}
